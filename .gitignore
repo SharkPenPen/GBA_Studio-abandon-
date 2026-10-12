@@ -1,0 +1,31 @@
+# GBA 工程构建产物（不要提交到 git）
+build/
+*.elf
+*.gba
+*.map
+
+# 模拟器生成的存档文件（mGBA 会在 ROM 旁边建同名 .sav）
+*.sav
+
+# 构建时用的临时目录（编译器的 TMP/TEMP 指向这里）
+.tmp/
+
+# 工具链安装器下载缓存（约 200KB，可随时重下）
+.tools/
+
+# 工具链本体（编译器、libtonc、模拟器；删掉后重跑安装脚本即可恢复）
+.toolchain/
+
+# 剧本/资源清单的自动备份（导出时会生成 scenario.txt.bak）
+scenario/*.bak
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 权限诊断报告（只在排查文件权限问题时生成）
+.acl-report/
+
+# Windows 杂项
+Thumbs.db
+desktop.ini

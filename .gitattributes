@@ -1,0 +1,21 @@
+# 一律不做换行符转换
+#
+# 为什么必须这样：
+#   本项目的文件是**混合换行**的 —— Python 用 \n 写、.ps1 用 CRLF、
+#   而且 .ps1 **必须带 UTF-8 BOM**（PowerShell 5.1 少了 BOM 就按 GBK 读，
+#   报一堆莫名其妙的语法错）。
+#   git 的 autocrlf 会在 checkout 时改换行，可能把文件改坏 ——
+#   对这套项目来说，"原样进出"比"统一换行"重要得多。
+* -text
+
+# 二进制素材别做差异比较
+*.png binary
+*.jpg binary
+*.bmp binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.flac binary
+*.gba binary
+*.ttf binary
+*.ttc binary
