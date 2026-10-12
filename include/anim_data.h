@@ -9,8 +9,8 @@
 
 #include <tonc.h>
 
-#define ANIM_N       0
-#define ANIM_FRAME_N 0
+#define ANIM_N       2
+#define ANIM_FRAME_N 5
 
 /* 每个动画一条：从 anim_frames 的第几项开始、共几帧、是否循环 */
 typedef struct {

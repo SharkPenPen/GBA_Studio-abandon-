@@ -5,48 +5,34 @@ extern const u16 gfx_bg_0[];
 extern const u16 gfx_bg_1[];
 extern const u16 gfx_bg_2[];
 extern const u16 gfx_bg_3[];
-extern const u16 gfx_bg_4[];
-extern const u16 gfx_bg_5[];
-extern const u16 gfx_bg_6[];
-extern const u16 gfx_bg_7[];
-extern const u16 gfx_bg_8[];
-extern const u16 gfx_bg_9[];
-extern const u16 gfx_bg_10[];
-extern const u16 gfx_bg_11[];
-extern const u16 gfx_bg_12[];
-extern const u16 gfx_bg_13[];
-extern const u16 gfx_bg_14[];
-extern const u16 gfx_bg_15[];
-extern const u16 gfx_bg_16[];
-extern const u16 gfx_bg_17[];
-extern const u16 gfx_bg_18[];
-extern const u16 gfx_bg_19[];
+extern const u16 gfx_flat_0[];
+extern const u16 gfx_flat_1[];
+extern const u16 gfx_flat_2[];
+extern const u16 gfx_flat_3[];
+extern const u16 gfx_flat_4[];
+extern const u16 gfx_spr_5[];
+extern const u16 gfx_spr_6[];
+extern const u16 gfx_spr_7[];
+extern const u16 gfx_logo_0[];
 
 const GfxAsset gfx_bgs[] = {
     { gfx_bg_0, 240, 160, 0x0000 },
     { gfx_bg_1, 240, 160, 0x0000 },
     { gfx_bg_2, 240, 160, 0x0000 },
     { gfx_bg_3, 240, 160, 0x0000 },
-    { gfx_bg_4, 240, 160, 0x0000 },
-    { gfx_bg_5, 240, 160, 0x0000 },
-    { gfx_bg_6, 240, 160, 0x0000 },
-    { gfx_bg_7, 240, 160, 0x0000 },
-    { gfx_bg_8, 240, 160, 0x0000 },
-    { gfx_bg_9, 240, 160, 0x0000 },
-    { gfx_bg_10, 240, 160, 0x0000 },
-    { gfx_bg_11, 240, 160, 0x0000 },
-    { gfx_bg_12, 240, 160, 0x0000 },
-    { gfx_bg_13, 240, 160, 0x0000 },
-    { gfx_bg_14, 240, 160, 0x0000 },
-    { gfx_bg_15, 240, 160, 0x0000 },
-    { gfx_bg_16, 240, 160, 0x0000 },
-    { gfx_bg_17, 240, 160, 0x0000 },
-    { gfx_bg_18, 240, 160, 0x0000 },
-    { gfx_bg_19, 240, 160, 0x0000 },
 };
-const int gfx_bgs_count = 20;
+const int gfx_bgs_count = 4;
 
-const GfxAsset gfx_sprites[1] = { { 0, 0, 0, 0 } };
-const int gfx_sprites_count = 0;
+const GfxAsset gfx_sprites[] = {
+    { gfx_flat_0, 10, 22, 0x7C1F },
+    { gfx_flat_1, 10, 20, 0x7C1F },
+    { gfx_flat_2, 8, 22, 0x7C1F },
+    { gfx_flat_3, 10, 22, 0x7C1F },
+    { gfx_flat_4, 12, 22, 0x7C1F },
+    { gfx_spr_5, 111, 120, 0x7C1F },
+    { gfx_spr_6, 152, 120, 0x7C1F },
+    { gfx_spr_7, 89, 120, 0x7C1F },
+};
+const int gfx_sprites_count = 8;
 
-const GfxAsset gfx_logo_asset = { 0, 0, 0, 0 };
+const GfxAsset gfx_logo_asset = { gfx_logo_0, 199, 53, 0x7C1F };

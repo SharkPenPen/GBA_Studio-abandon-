@@ -7,7 +7,7 @@
 #define FONT_GLYPH_W       11
 #define FONT_GLYPH_H       11
 #define FONT_GLYPH_ROWS    FONT_GLYPH_H
-#define FONT_GLYPH_COUNT   801
+#define FONT_GLYPH_COUNT   254
 #define FONT_GLYPH_BYTES   (FONT_GLYPH_ROWS * 2)
 /* ASCII 的推进宽度：由字库工具按源字体步进算出，
  * C 侧不要写死，否则会和字库里的字形宽度脱节 */

@@ -19,8 +19,8 @@ extern const int gfx_bgs_count;
 extern const GfxAsset gfx_sprites[];
 extern const int gfx_sprites_count;
 
-/* 关卡精灵占了前 0 个下标；剧情 char 的下标要加上它 */
-#define GFX_FLAT_COUNT 0
+/* 关卡精灵占了前 5 个下标；剧情 char 的下标要加上它 */
+#define GFX_FLAT_COUNT 5
 
 /* 标题画面用哪张背景 */
 #define GFX_TITLE_BG 0
